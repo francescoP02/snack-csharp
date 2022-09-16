@@ -126,19 +126,46 @@
 
 
 
+//Snack 7
 
-int[] numeriDispari = new int[6];
 
-for (int i = 0; i < numeriDispari.Length; i++)
+//int[] numeriDispari = new int[6];
+
+//for (int i = 0; i < numeriDispari.Length; i++)
+//{
+//    Console.WriteLine("Inserisci un numero");
+
+//    int numero = Convert.ToInt32(Console.ReadLine());
+
+//    if (numero % 2 == 1)
+//    {
+//        numeriDispari[i] = numero;
+//    }
+//}
+
+
+
+
+//Snack 8
+
+Console.WriteLine("Quanti numeri vuoi?");
+
+int numero = Convert.ToInt32(Console.ReadLine());
+
+int[] numeri = new int[numero];
+
+for (int i = 0; i < numero; i++)
 {
-    Console.WriteLine("Inserisci un numero");
-
-    int numero = Convert.ToInt32(Console.ReadLine());
-
-    if (numero % 2 == 1)
-    {
-        numeriDispari[i] = numero;
-    }
+    numeri[i] = i;
 }
+
+int sum = 0;
+
+for (int i = 1; i < numeri.Length; i = i + 2)
+{
+    sum = sum + numeri[i];
+}
+
+Console.WriteLine($"La somma dei numeri in posizione dispari è {sum}");
 
 
