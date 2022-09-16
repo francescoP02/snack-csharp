@@ -148,24 +148,41 @@
 
 //Snack 8
 
-Console.WriteLine("Quanti numeri vuoi?");
+//Console.WriteLine("Quanti numeri vuoi?");
 
-int numero = Convert.ToInt32(Console.ReadLine());
+//int numero = Convert.ToInt32(Console.ReadLine());
 
-int[] numeri = new int[numero];
+//int[] numeri = new int[numero];
 
-for (int i = 0; i < numero; i++)
-{
-    numeri[i] = i;
-}
+//for (int i = 0; i < numero; i++)
+//{
+//    numeri[i] = i;
+//}
 
+//int sum = 0;
+
+//for (int i = 1; i < numeri.Length; i = i + 2)
+//{
+//    sum = sum + numeri[i];
+//}
+
+//Console.WriteLine($"La somma dei numeri in posizione dispari è {sum}");
+
+
+//Snack 9
+
+int[] numeri = new int[1000];
 int sum = 0;
 
-for (int i = 1; i < numeri.Length; i = i + 2)
+while (sum < 50)
 {
-    sum = sum + numeri[i];
+    Console.WriteLine("Inserire un numero fino a quando la somma è minore di 50");
+    int number = Convert.ToInt32(Console.ReadLine());
+
+    sum = sum + number;
 }
 
-Console.WriteLine($"La somma dei numeri in posizione dispari è {sum}");
+Console.WriteLine($"La somma è {sum}");
+
 
 
