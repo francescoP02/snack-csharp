@@ -53,18 +53,37 @@
 //Snack 3
 
 
+//int sum = 0;
+
+//for (int i = 0; i < 10; i++)
+
+//{
+//    Console.WriteLine("Inserisci un numero");
+
+//    int numero = Convert.ToInt32(Console.ReadLine());
+
+//    sum = sum + numero;
+
+//}
+
+//Console.WriteLine($"La somma equivale a {sum}");
+
+
+
+//Snack 4
+
 int sum = 0;
 
-for (int i = 0; i < 10; i++)
+int max = 10;
 
+int min = 2;
+
+for (int i = min; i <= max; i++)
 {
-    Console.WriteLine("Inserisci un numero");
-
-    int numero = Convert.ToInt32(Console.ReadLine());
-
-    sum = sum + numero;
-
+    sum = sum + i;
 }
 
-Console.WriteLine($"La somma equivale a {sum}");
+float average = sum / (max - min);
+
+Console.WriteLine($"La somma è {sum}, la media è {average}");
 
