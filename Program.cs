@@ -171,18 +171,40 @@
 
 //Snack 9
 
-int[] numeri = new int[1000];
-int sum = 0;
+//int[] numeri = new int[1000];
+//int sum = 0;
 
-while (sum < 50)
+//while (sum < 50)
+//{
+//    Console.WriteLine("Inserire un numero fino a quando la somma è minore di 50");
+//    int number = Convert.ToInt32(Console.ReadLine());
+
+//    sum = sum + number;
+//}
+
+//Console.WriteLine($"La somma è {sum}");
+
+
+
+//Snack 10
+
+Random random = new Random();
+
+Console.WriteLine("Quanti array vuoi?");
+
+int numero = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 0; i < numero; i++)
 {
-    Console.WriteLine("Inserire un numero fino a quando la somma è minore di 50");
-    int number = Convert.ToInt32(Console.ReadLine());
+    int[] array = new int[10];
+    for (int j = 0; j < array.Length; j++)
+    {
+        int num = random.Next(10);
 
-    sum = sum + number;
+        array[j] = num;
+    }
+    
+    Console.WriteLine($"L'array {i} contiene i seguenti numeri: {string.Join(", ", array)}");
 }
-
-Console.WriteLine($"La somma è {sum}");
-
 
 
