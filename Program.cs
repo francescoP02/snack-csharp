@@ -72,18 +72,35 @@
 
 //Snack 4
 
-int sum = 0;
+//int sum = 0;
 
-int max = 10;
+//int max = 10;
 
-int min = 2;
+//int min = 2;
 
-for (int i = min; i <= max; i++)
+//for (int i = min; i <= max; i++)
+//{
+//    sum = sum + i;
+//}
+
+//float average = sum / (max - min);
+
+//Console.WriteLine($"La somma è {sum}, la media è {average}");
+
+
+
+
+//Snack 5
+
+
+Console.WriteLine("Inserisci un numero");
+
+int numero = Convert.ToInt32(Console.ReadLine());
+
+if (numero % 2 == 0 )
 {
-    sum = sum + i;
+    Console.WriteLine($"Il numero {numero} è pari");
+} else
+{
+    Console.WriteLine($"Il numero successivo {numero + 1} è pari");
 }
-
-float average = sum / (max - min);
-
-Console.WriteLine($"La somma è {sum}, la media è {average}");
-
