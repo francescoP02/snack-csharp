@@ -194,16 +194,16 @@ Console.WriteLine("Quanti array vuoi?");
 
 int numero = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 0; i < numero; i++)
+for (int i = 1; i <= numero; i++)
 {
     int[] array = new int[10];
     for (int j = 0; j < array.Length; j++)
     {
-        int num = random.Next(10);
+        int num = random.Next(100);
 
         array[j] = num;
     }
-    
+
     Console.WriteLine($"L'array {i} contiene i seguenti numeri: {string.Join(", ", array)}");
 }
 
