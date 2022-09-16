@@ -93,14 +93,35 @@
 //Snack 5
 
 
-Console.WriteLine("Inserisci un numero");
+//Console.WriteLine("Inserisci un numero");
 
-int numero = Convert.ToInt32(Console.ReadLine());
+//int numero = Convert.ToInt32(Console.ReadLine());
 
-if (numero % 2 == 0 )
+//if (numero % 2 == 0 )
+//{
+//    Console.WriteLine($"Il numero {numero} è pari");
+//} else
+//{
+//    Console.WriteLine($"Il numero successivo {numero + 1} è pari");
+//}
+
+
+
+
+//Snack 6
+
+string[] invitati = {"Jay Gatsby", "Nick Carraway", "Jordan Baker", "Myrtle Wilson"};
+
+Console.WriteLine("Inserisci uil nome dell'invitato");
+
+string nome = Console.ReadLine();
+
+if (invitati.Contains(nome))
 {
-    Console.WriteLine($"Il numero {numero} è pari");
+    Console.WriteLine($"{nome} è ammesso alla festa");
 } else
 {
-    Console.WriteLine($"Il numero successivo {numero + 1} è pari");
+    Console.WriteLine($"{nome} non è ammesso alla festa");
 }
+
+
