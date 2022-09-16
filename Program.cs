@@ -20,3 +20,32 @@
 //{
 //    Console.WriteLine("I due numeri sono uguali");
 //}
+
+
+//Snack 2
+
+Console.WriteLine("Inserisci una parola");
+
+string parola1 = Console.ReadLine();
+
+int lunghezza1 = parola1.Length;
+
+Console.WriteLine("Inserisci una seconda parola");
+
+string parola2 = Console.ReadLine();
+
+int lunghezza2 = parola2.Length;
+
+if (lunghezza1 > lunghezza2)
+{
+    Console.WriteLine($"{parola1},{parola2}");
+}
+else if (lunghezza1 < lunghezza2)
+{
+    Console.WriteLine($"{parola2},{parola1}");
+}
+else
+{
+    Console.WriteLine("Le due parole sono egualmente lunghe");
+}
+
