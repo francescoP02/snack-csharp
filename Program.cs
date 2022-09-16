@@ -24,28 +24,47 @@
 
 //Snack 2
 
-Console.WriteLine("Inserisci una parola");
+//Console.WriteLine("Inserisci una parola");
 
-string parola1 = Console.ReadLine();
+//string parola1 = Console.ReadLine();
 
-int lunghezza1 = parola1.Length;
+//int lunghezza1 = parola1.Length;
 
-Console.WriteLine("Inserisci una seconda parola");
+//Console.WriteLine("Inserisci una seconda parola");
 
-string parola2 = Console.ReadLine();
+//string parola2 = Console.ReadLine();
 
-int lunghezza2 = parola2.Length;
+//int lunghezza2 = parola2.Length;
 
-if (lunghezza1 > lunghezza2)
+//if (lunghezza1 > lunghezza2)
+//{
+//    Console.WriteLine($"{parola1},{parola2}");
+//}
+//else if (lunghezza1 < lunghezza2)
+//{
+//    Console.WriteLine($"{parola2},{parola1}");
+//}
+//else
+//{
+//    Console.WriteLine("Le due parole sono egualmente lunghe");
+//}
+
+
+//Snack 3
+
+
+int sum = 0;
+
+for (int i = 0; i < 10; i++)
+
 {
-    Console.WriteLine($"{parola1},{parola2}");
+    Console.WriteLine("Inserisci un numero");
+
+    int numero = Convert.ToInt32(Console.ReadLine());
+
+    sum = sum + numero;
+
 }
-else if (lunghezza1 < lunghezza2)
-{
-    Console.WriteLine($"{parola2},{parola1}");
-}
-else
-{
-    Console.WriteLine("Le due parole sono egualmente lunghe");
-}
+
+Console.WriteLine($"La somma equivale a {sum}");
 
