@@ -110,18 +110,35 @@
 
 //Snack 6
 
-string[] invitati = {"Jay Gatsby", "Nick Carraway", "Jordan Baker", "Myrtle Wilson"};
+//string[] invitati = {"Jay Gatsby", "Nick Carraway", "Jordan Baker", "Myrtle Wilson"};
 
-Console.WriteLine("Inserisci uil nome dell'invitato");
+//Console.WriteLine("Inserisci uil nome dell'invitato");
 
-string nome = Console.ReadLine();
+//string nome = Console.ReadLine();
 
-if (invitati.Contains(nome))
+//if (invitati.Contains(nome))
+//{
+//    Console.WriteLine($"{nome} è ammesso alla festa");
+//} else
+//{
+//    Console.WriteLine($"{nome} non è ammesso alla festa");
+//}
+
+
+
+
+int[] numeriDispari = new int[6];
+
+for (int i = 0; i < numeriDispari.Length; i++)
 {
-    Console.WriteLine($"{nome} è ammesso alla festa");
-} else
-{
-    Console.WriteLine($"{nome} non è ammesso alla festa");
+    Console.WriteLine("Inserisci un numero");
+
+    int numero = Convert.ToInt32(Console.ReadLine());
+
+    if (numero % 2 == 1)
+    {
+        numeriDispari[i] = numero;
+    }
 }
 
 
