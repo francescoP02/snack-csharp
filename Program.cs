@@ -83,7 +83,7 @@
 //    sum = sum + i;
 //}
 
-//float average = sum / (max - min);
+//float average = sum / ((max - min) + 1);
 
 //Console.WriteLine($"La somma è {sum}, la media è {average}");
 
@@ -188,23 +188,23 @@
 
 //Snack 10
 
-Random random = new Random();
+//Random random = new Random();
 
-Console.WriteLine("Quanti array vuoi?");
+//Console.WriteLine("Quanti array vuoi?");
 
-int numero = Convert.ToInt32(Console.ReadLine());
+//int numero = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i <= numero; i++)
-{
-    int[] array = new int[10];
-    for (int j = 0; j < array.Length; j++)
-    {
-        int num = random.Next(100);
+//for (int i = 1; i <= numero; i++)
+//{
+//    int[] array = new int[10];
+//    for (int j = 0; j < array.Length; j++)
+//    {
+//        int num = random.Next(100);
 
-        array[j] = num;
-    }
+//        array[j] = num;
+//    }
 
-    Console.WriteLine($"L'array {i} contiene i seguenti numeri: {string.Join(", ", array)}");
-}
+//    Console.WriteLine($"L'array {i} contiene i seguenti numeri: {string.Join(", ", array)}");
+//}
 
 
