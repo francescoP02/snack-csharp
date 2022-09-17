@@ -208,3 +208,55 @@
 //}
 
 
+
+//Snack 11
+
+
+//Console.WriteLine("Inserisci una parola");
+
+//string parola1 = Console.ReadLine();
+
+//Console.WriteLine("Inserisci una seconda parola");
+
+//string parola2 = Console.ReadLine();
+
+//void VerificaEStampaStrighe(string stringa1, string stringa2)
+//{
+//    if (stringa1.Length == stringa2.Length)
+//    {
+//        Console.WriteLine($"Le parole {parola1},{parola2} sono egualmente lunghe");
+//    }
+//    else if (stringa1.Length > stringa2.Length)
+//    {
+//        Console.WriteLine($"La più lunga è {parola1}");
+//    }
+//    else
+//    {
+//        Console.WriteLine($"La più lunga è {parola2}");
+//    }
+//}
+
+//VerificaEStampaStrighe(parola1,parola2);
+
+
+//Snack 12
+
+
+Console.WriteLine("Inserisci un numero");
+
+int numero = Convert.ToInt32(Console.ReadLine());
+
+void EvenOrOdd(int valore)
+{
+    if (valore % 2 == 0)
+    {
+        Console.WriteLine($"Il numero {numero} è pari");
+    }
+    else
+    {
+        Console.WriteLine($"Il numero {numero} è dispari");
+    }
+}
+
+EvenOrOdd(numero);
+
